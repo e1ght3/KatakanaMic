@@ -19,3 +19,7 @@ CCBY。
 大したプログラムでもないので、「e1ght3」のクレジットさえ表記していただければ好きに使っていただいて構いません。
 kuromoji.jsを使用しているので、そちらのライセンスにも従ってください。
 [https://github.com/takuyaa/kuromoji.js/](https://github.com/takuyaa/kuromoji.js/)
+
+dictの中身は以下のURLから取得をしています。
+[https://cdn.jsdelivr.net/gh/takuyaa/kuromoji.js@master/dict/](https://cdn.jsdelivr.net/gh/takuyaa/kuromoji.js@master/dict/)
+
