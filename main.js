@@ -3,12 +3,20 @@ const result = document.getElementById("result");
 
 let tokenizer;
 
-// Initialize kuromoji tokenizer
-kuromoji.builder({ dicPath: 'https://cdn.rawgit.com/takuyaa/kuromoji.js/master/dict' }).build(function (err, _tokenizer) {
-  if (err) {
-    throw err;
-  }
+const tokenizerPromise = new Promise((resolve, reject) => {
+  kuromoji.builder({ dicPath: 'dict' }).build((err, _tokenizer) => {
+    if (err) {
+      reject(err);
+    } else {
+      resolve(_tokenizer);
+    }
+  });
+});
+
+tokenizerPromise.then(_tokenizer => {
   tokenizer = _tokenizer;
+}).catch(err => {
+  console.error(err);
 });
 
 startButton.addEventListener("click", () => {
