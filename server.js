@@ -13,7 +13,6 @@ wss.on("connection", (ws) => {
 
   ws.on("message", (message) => {
     const data = JSON.parse(message);
-    //console.log("Recieved data from client",data.katakana);
 
     if (data.type === "text-update") {
       wss.clients.forEach((client) => {

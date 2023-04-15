@@ -1,4 +1,5 @@
 # KatakanaMic
+
 <BR>
   
 ## このプログラムについて
@@ -23,19 +24,21 @@ http://localhost:3000<BR>
 <BR>
   
 ## 既知の問題
-ローカルで実行する分には問題ありませんが、<BR>
-Web上から実行すると読み込み時に固まります。<BR><BR>
+クライアントへのメッセージ送信時に意図通りの形式に送信されない。<BR>
+NeosVR上でマルチユーザーで使用した場合の動作検証未実施<BR>
 <BR>
 
 ## 問い合わせについて
+
 製作者はプログラムには疎いので、質問していただいても恐らく回答できるだけの知識がないと思います。<BR>
 <BR>
 
 ## ライセンス等
+
 CCBY。<BR>
 大したプログラムでもないので、「e1ght3」のクレジットさえ表記していただければ好きに使っていただいて構いません。<BR>
-kuromoji.jsを使用しているので、そちらのライセンスにも従ってください。<BR>
+kuromoji.js を使用しているので、そちらのライセンスにも従ってください。<BR>
 [https://github.com/takuyaa/kuromoji.js/](https://github.com/takuyaa/kuromoji.js/)<BR>
 <BR>
-dictの中身は以下のURLから取得をしています。<BR>
+dict の中身は以下の URL から取得をしています。<BR>
 [https://cdn.jsdelivr.net/gh/takuyaa/kuromoji.js@master/dict/](https://cdn.jsdelivr.net/gh/takuyaa/kuromoji.js@master/dict/)
