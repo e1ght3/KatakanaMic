@@ -5,7 +5,17 @@
 Chromeでのみ動作確認済み。
 
 ## 使い方
-index.htmlとmain.jsを同じディレクトリに置いてindex.htmlを開くだけです。
+コードを一式取得して以下を実行してください。
+
+server.jsのディレクトリに移動して以下のセットアップを実行(必要に応じて)
+npm init -y
+npm install express ws http
+
+サーバー起動
+node server.js
+
+ブラウザからアクセス
+http://localhost:3000
 
 ## 既知の問題
 ローカルで実行する分には問題ありませんが、
