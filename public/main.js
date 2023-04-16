@@ -12,6 +12,9 @@ const sendTextButton = document.getElementById("send-text");
 //WebSocket
 //*********************************************
 
+
+console.log("WebSocket connection start:",`ws://${location.host}`);
+
 ws.onopen = () => {
   console.log("WebSocket connection opened");
 };
