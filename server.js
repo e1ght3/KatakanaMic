@@ -30,5 +30,8 @@ wss.on("connection", (ws) => {
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-  console.log(`Server started on port ${PORT}`);
+  const addressInfo = server.address();
+  const address = addressInfo.address;
+  
+  console.log(`Server is listening on ${address}:${PORT}`);
 });
